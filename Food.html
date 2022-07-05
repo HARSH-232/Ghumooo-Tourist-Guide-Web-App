@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Food</title>
+​
+</head>
+<body bgcolor="black">
+  <header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href={{url_for('auth.content')}} class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+          <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+          <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        </svg>
+        <span class="ml-3 text-xl xl:block lg:hidden">GHUMOOO!</span>
+      </a>
+     
+      </div>
+    </div>
+  </header>
+  
+  <hr>
+
+    <section class="text-gray-400 body-font bg-gray-900">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h2 class="text-xs text-indigo-400 tracking-widest font-medium title-font mb-1">Cuisines</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Food Recommendations</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are here to assist you to choose the perfect restaurant with a great review and top notch food quality.</p>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+              <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Mahabaleshwar</h2>
+              <p class="leading-relaxed text-base mb-4">Mahabaleshwar is located on the mountainous Sahyadri range. It is famous for its strawberries and strawberry derivatives. The ethnic food there is a Maharashtrian dish Puran poli.</p>
+              <a href = {{url_for('auth.Food_mahabaleshwar')}} class="text-indigo-400 inline-flex items-center">Check out restaurants
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+              <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Mumbai</h2>
+              <p class="leading-relaxed text-base mb-4">Mumbai is the capital of Maharashtra and the financial capital of India. It is quite famous for its street food as it is such a fast city especially vada pav.</p>
+              <a href={{url_for('auth.Food_mumbai')}} class="text-indigo-400 inline-flex items-center">Check out restaurants
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+              <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Nagpur</h2>
+              <p class="leading-relaxed text-base mb-4">Nagpur is the second capital of Maharashtra and is known for its oranges and other orange items. Saoji is another special food item from Nagpur.</p>
+              <a href={{url_for('auth.Food_nagpur')}} class="text-indigo-400 inline-flex items-center">Check out restaurants
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+              <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Ratnagiri</h2>
+              <p class="leading-relaxed text-base mb-4">Ratnagiri a costal district comes under Konkan facing the beautiful Arabian sea, is known for its Mangoes and Kombdi vade traditional Maharashtrian item.</p>
+              <a href={{url_for('auth.Food_ratnagiri')}} class="text-indigo-400 inline-flex items-center">Check out restaurants
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Goa</h2>
+                <p class="leading-relaxed text-base mb-4">Goa is coastal state which happens to be one of the best travel destinations for a vacation. It is known for its fresh coconuts and sea food.</p>
+                <a href={{url_for('auth.Food_goa')}} class="text-indigo-400 inline-flex items-center">Check out restaurants
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Jaipur</h2>
+                <p class="leading-relaxed text-base mb-4">The Pink City is the capital of Rajasthan and also the largest city in India. It is known for dal baati and sweet dish churma.</p>
+                <a href={{url_for('auth.Food_jaipur')}} class="text-indigo-400 inline-flex items-center">Check out restaurants
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Varanasi</h2>
+                <p class="leading-relaxed text-base mb-4">One of the oldest and the home of Lord Shive is one of the most important historic cities in India. It is famous for its street food especially kachori.</p>
+                <a href={{url_for('auth.Food_varanasi')}} class="text-indigo-400 inline-flex items-center">Check out restaurants
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Agra</h2>
+                <p class="leading-relaxed text-base mb-4">The city on banks of river Yamuna serves the home to the very famous wonder of the world Taj Mahal and is well known for its street food like paratha, jalebi and mughlai dishes.</p>
+                <a a href={{url_for('auth.Food_agra')}} class="text-indigo-400 inline-flex items-center">Check out restaurants
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+          </div>
+          <a href={{url_for('auth.content')}}>
+          <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">BACK</button>
+          </a>
+        </div>
+      </section>
+</body>
+</html>

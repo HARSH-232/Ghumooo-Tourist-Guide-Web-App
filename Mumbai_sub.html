@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Main Content</title>
+</head>
+<body>
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="Mahablaeshwar pic" src="{{url_for('static', filename='mum2.jpg')}}">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">City of Dreams</h1>
+            
+            <p class="leading-relaxed mb-8">For those of us perpetually confused between North Goa and South Goa, this might help - the state of Goa is divided into North Goa and South Goa. 
+                While North Goa is the nightlife hub where all the touristy beaches, flea markets, and beach shacks are located, South Goa is the land of luxurious resorts and laid-back beach vibes.
+                </p>
+                <p class="leading-relaxed mb-8">
+                    Having been a Portuguese territory for almost 450 years, the Portuguese architecture is nowhere as prevalent as in Goa - visit one of the many whitewashed churches, crumbling forts or spectacular churches. 
+                    The yellow houses with purple doors, ochre coloured mansions and oyester shell windows is what completes the kalieodscope of Goan architecture.
+                    Panjim, the capital city located in the centre overlooks the calm Mandovi River where the famous floating casinos of Goa are docked. 
+                    The centre is well-connected with an international airport and roads and trains run from North to South part of Goa. With a coastline stretching for over 100 kilometres, Goa has stunning beaches. While Baga and Calangute are more popular among the Indian family crowd, Anjuna and Arambol draw a lot of foreign tourists. 
+                    The beaches in South Goa are relatively lesser explored, but some of them like Agonda and Palolem are more beautiful.
+
+                </p>
+                
+            <div class="flex justify-center">
+                <a href="https://goo.gl/maps/KuSJXoEjRHRQBcK86">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Show Me</button>
+                </a>
+                
+                <a href={{url_for('auth.Mumbai')}}>
+              <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Back</button>
+                </a>
+            
+            <hr>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="text-center lg:w-2/3 w-full" >
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" align="center">Gallery</h1>
+            </div>
+          <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='mum3.jpg')}}">
+              <div class="text-center relative z-10 w-full">
+                <h2 class="text-2xl text-white font-medium title-font mb-2">Marine Drive</h2>
+                <p class="leading-relaxed">A perfect to let go all your worries and enjoy the beauty this place holds!    </p>
+                <a href="https://goo.gl/maps/sUoMCQfvdjheYbU58" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-2">
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='mum4.jpg')}}">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Colaba Causeway</h2>
+                    <p class="leading-relaxed">Explore this extraavagent place.</p>
+                    <a href="https://goo.gl/maps/rCh3Ty5mxwyjAERF6" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='mum5.jpg')}}">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Gateway of India</h2>
+                    <p class="leading-relaxed">Explore this very important historic place in mumbai. </p>
+                    <a href="https://goo.gl/maps/ZuWiNGjARaVbU3QV7" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+
+      
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Main Content</title>
+</head>
+<body>
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="Mahablaeshwar pic" src="{{url_for('static', filename='var2.jpg')}}">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">The Spiritual Capital of India</h1>
+            
+            <p class="leading-relaxed mb-8">Varanasi is famous for its production of silks and brocades with gold and silver threadwork. A renowned carpet-weaving centre is at Bhadoi. Wooden toys, bangles made of glass, ivory work, and brassware are also produced in Varanasi. The city is host to numerous religious festivals.
+                </p>
+                <p class="leading-relaxed mb-8">
+                    Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of India, the city draws Hindu pilgrims who bathe in the Ganges River’s sacred waters and perform funeral rites. Along the city's winding streets are some 2,000 temples, including Kashi Vishwanath, the “Golden Temple,” dedicated to the Hindu god Shiva.
+                </p>
+                
+            <div class="flex justify-center">
+                <a href="https://goo.gl/maps/qf2P8X1Qd39axJZq7">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Show Me</button>
+                </a>
+                
+                <a href={{url_for('auth.Varanasi')}}>
+              <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Back</button>
+                </a>
+            
+            <hr>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="text-center lg:w-2/3 w-full" >
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" align="center">Gallery</h1>
+            </div>
+          <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='var3.jpg')}}">
+              <div class="text-center relative z-10 w-full">
+                <h2 class="text-2xl text-white font-medium title-font mb-2">Sankat Mochan Hanuman Temple</h2>
+                <p class="leading-relaxed">The Sankat Mochan Hanuman Temple is situated by the River Assi and was built 
+                    in the 1900s by the freedom fighter Pandit Madan Mohan Malviya.    </p>
+                <a href="https://goo.gl/maps/iPHNmj2L9xg3VG4P6" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-2">
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='var4.jpg')}}">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Nepali Temple</h2>
+                    <p class="leading-relaxed">Nepali Temple is a 19th century shrine dedicated to Lord Shiva.</p>
+                    <a href="https://goo.gl/maps/FuBzst3cFwQTWzDZ6" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='var5.jpg')}}">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Kedar Ghaat</h2>
+                    <p class="leading-relaxed">Kedar Ghat is one of the oldest Ghats in Varanasi and is considered cleaner for 
+                        bathing in the holy River Ganga and offering prayers to Lord Shiva at the 
+                        Kedareshwar Temple. </p>
+                    <a href="https://goo.gl/maps/QYNdVu6KRxBZRvAt6" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+
+      
+
+</body>
+</html>     

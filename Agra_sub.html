@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Main Content</title>
+</head>
+<body>
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="Mahablaeshwar pic" src="{{url_for('static', filename='agra2.jpg')}}">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">The Taj City</h1>
+            
+            <p class="leading-relaxed mb-8">Agra is a city offering a discovery of the beautiful era. Agra has a rich history, reflected in its numerous monuments dotted in and around the city. 
+                The earliest citation for Agra comes from the mythological era, where the epic Mahabharata refer Agra as ‘Agravana’ meaning paradise in Sanskrit. ‘Ptolemy’, the famous second century A.D. geographer, was the first person who referred Agra with its modern name. The Modern Agra was founded by Sikandar Lodi, ruler of Lodi dynasty in 16th century. 
+                It was when Shah Jahan descended the Mughal throne that Agra reached the zenith of architectural beauty. </p>
+                <p class="leading-relaxed mb-8">
+                    The city lies in the Western part of Uttar Pradesh on the bank of River Yamuna. Though the wonderful allure of the Taj Mahal attracts people from around the world over to Agra, it is not a standalone attraction. The city offers a trail of fascinating tombs and mausoleums to explore. 
+                    Acclaimed for its lavish crafts like Pietra Dura (marble inlay) work, rugs and leather goods, and the luscious Petha, Agra equally caters well to shopaholics and foodies. </p>
+                
+            <div class="flex justify-center">
+                <a href="https://goo.gl/maps/GyW4jyCeFeez9Ww56">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Show Me</button>
+                </a>
+                
+                <a href={{url_for('auth.Agra')}}>
+              <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Back</button>
+                </a>
+            
+            <hr>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="text-center lg:w-2/3 w-full" >
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" align="center">Gallery</h1>
+            </div>
+          <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='agra3.jpg')}}">
+              <div class="text-center relative z-10 w-full">
+                <h2 class="text-2xl text-white font-medium title-font mb-2">Agra Fort</h2>
+                <p class="leading-relaxed">Built as a military structure in 1565 by Emperor Akbar with later additions by Shah Jahan, the stunning Agra Fort (also known as Agra's Red Fort) is an interesting mix of both Hindu and Muslim influences.    </p>
+                <a href="https://goo.gl/maps/Ch2kfnkYEpgqk7jw7" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-2">
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='agra4.jpg')}}">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Akbar Tomb</h2>
+                    <p class="leading-relaxed">Built in 1605-1613, Akbar’s Tomb is where the immortal remains of Emperor Akbar are replaced. Located in Sikandra, Akbar himself ordered the construction of the tomb while he was alive. </p>
+                    <a href="https://goo.gl/maps/BmA74dx4ubcuqQpz8" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='agra5.jpg')}}">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Khas Mahal</h2>
+                    <p class="leading-relaxed">As the name suggestes, Khas Mahal was a place built by the emperor for his daughters Roshnara and Jahanara. The heavily adorned ceilings and alcove in the walls are treat to the eyes. </p>
+                    <a href="https://goo.gl/maps/mLtTmbY9fWyz7ctH9" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+
+      
+
+</body>
+</html>     

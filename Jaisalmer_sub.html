@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Main Content</title>
+</head>
+<body>
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="Mahablaeshwar pic" src="{{url_for('static', filename='jas2.jpg')}}">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Golden City</h1>
+            
+            <p class="leading-relaxed mb-8">Jaisalmer is a former medieval trading center and a princely state in the western Indian state of Rajasthan, in the heart of the Thar Desert. Known as the "Golden City," it's distinguished by its yellow sandstone architecture. Dominating the skyline is Jaisalmer Fort, a sprawling hilltop citadel buttressed by 99 bastions. 
+                Behind its massive walls stand the ornate Maharaja's Palace and intricately carved Jain temples </p>
+                <p class="leading-relaxed mb-8">
+                    Jaisalmer is known for its mirrorwork embroidered garments and carpets, blankets and shawls, woolen pattu, carpets made from camel hair, tapestry, oil lamps, finely cut antiques, old stonework, silver jewellery and silk and cotton textiles. </p>
+                
+            <div class="flex justify-center">
+                <a href="https://goo.gl/maps/7LQWezSnnuR8PnvL8">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Show Me</button>
+                </a>
+                
+                <a href={{url_for('auth.Jaisalmer')}}>
+              <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Back</button>
+                </a>
+            
+            <hr>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="text-center lg:w-2/3 w-full" >
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" align="center">Gallery</h1>
+            </div>
+          <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='jas3.jpg')}}">
+              <div class="text-center relative z-10 w-full">
+                <h2 class="text-2xl text-white font-medium title-font mb-2">Nathmal Ki Haveli</h2>
+                <p class="leading-relaxed">Nathmal ki Haveli is an ornate architecture in the heart of Jaisalmer. It was 
+                    commissioned to serve as the residence of the then prime minister Diwan 
+                    Mohata Nathmal.    </p>
+                <a href="https://goo.gl/maps/sMktosuD1uTzS4s5A " class="mt-3 text-indigo-300 inline-flex items-center">Map
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-2">
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='jas4.jpg')}}">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Kuldhara Village</h2>
+                    <p class="leading-relaxed">Kuldhara is an abandoned village, located around 20 kilometres from Jaisalmer. 
+                        The village was abandoned overnight by its residents to save their honour and 
+                        lives from the hands of the tyrannical minister.  </p>
+                    <a href="https://goo.gl/maps/9cP81Ez32otUuzFt9" class="mt-3 text-indigo-300 inline-flex items-center">Map
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{{url_for('static', filename='agra5.jpg')}}">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Vyas Chattri</h2>
+                    <p class="leading-relaxed">Vyas Chhatri is the assemblage of golden sandstone, an edifice of Rajasthani 
+                        architecture. It was dedicated to sage Vyaas, the writer of epic Mahabharata 
+                        whose cenotaph is situated on the north of the fort. </p>
+                    <a href="https://goo.gl/maps/7u5sdh3XT9YrodaW7 " class="mt-3 text-indigo-300 inline-flex items-center">Map
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+
+      
+
+</body>
+</html>     

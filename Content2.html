@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Main Content</title>
+</head>
+<body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <br>
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+              
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+              <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+              <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            </svg>
+        
+            <span class="ml-3 text-xl">GHUMOOO!</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a href={{url_for('auth.food')}} class="mr-5 hover:text-white">FOOD</a>
+            <a href="https://auth.uber.com/login/?breeze_local_zone=phx3&next_url=https%3A%2F%2Fm.uber.com%2F&state=P_F4JxygLL3v2g0n58ECuOfn-Rlu2CKNalNx0Td3Ai4%3D&x-uber-analytics-session-id=490bacb7-6ce3-4446-90fc-3c8feecd6b28" class="mr-5 hover:text-white">CAB BOOKING</a>
+            <a href="https://www.makemytrip.com/" class="mr-5 hover:text-white">HOTEL BOOKING</a>
+            <a href={{url_for('auth.Guides')}} class="mr-5 hover:text-white">GUIDES</a>
+          </nav>
+          <a href={{url_for('auth.logout')}}
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Log Out
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          </button>
+          <br>
+       
+        </div>
+        
+      </header>
+      
+      <hr>
+      
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">BE READY TO SET YOUR INNER CHILD FREE</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Ghumo provides you all the info needed for enjoying the trip you just choose the place and also can get guide info.</p>
+            <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+          </div>
+        </div>
+          <br>
+          <a href={{url_for('auth.main')}}>
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'Mahabaleshwar temple.jpg')}}">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">MAHABALESHWAR</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Queen of Hill Stations</h1>
+                  <p class="leading-relaxed">A perfect Hillstation to visit the natures beauty and enjoy while enjoying a perfect view of valleys.</p>
+                </div>
+            </a>
+              </div>
+            </div>
+            <a href={{url_for('auth.Nagpur')}}>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'nagpur4.jpg')}}">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">NAGPUR</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">The Orange City!</h1>
+                  <p class="leading-relaxed">Nagpur is well known for its history and oranges also there are many Haldhiram outlets which are very much renounced .</p>
+                </div>
+              </div>
+            </a>
+            </div>
+             <a href={{url_for('auth.Ratnagiri')}}>    
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'chiplun.jpg')}}">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">RATNAGIRI</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">City of Kings</h1>
+                  <p class="leading-relaxed">Ratnagiri is the Coastal beauty of the west.</p>
+                </div>
+              </div>
+            </a>
+            </div>
+            <a href={{url_for('auth.Goa')}}>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'goa1.jpg')}}">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">GOA</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Pearl of the Orient</h1>
+                  <p class="leading-relaxed">Remember the incomplete trip to GOA with your friends, now is the perfect time.</p>
+                </div>
+              
+              </div>
+            </a>
+            </div>
+            <a href={{url_for('auth.Mumbai')}}>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="Mumbai" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'Mumbai.jpg')}}">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">MUMBAI</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">City of Dreams</h1>
+                  <p class="leading-relaxed">Mumbai most commonly also known as 'Bombay' a place where many famous people resides.</p>
+                </div>
+              </a>
+              </div>
+            
+            </div>
+          <a href={{url_for('auth.Varanasi')}}>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'varanasi.jpg')}}">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">VARANASI</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">City of Lights</h1>
+                  <p class="leading-relaxed">Varanasi is famous for its production of silks and brocades with gold and silver threadwork.</p>
+                </div>
+              </a>
+               </div>
+            </div>
+            <a href={{url_for('auth.Jaipur')}}>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'jaipur.jpg')}}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">JAIPUR</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Pink City</h1>
+                    <p class="leading-relaxed">Explore the Pink in the city's heart.</p>
+                  </div>
+                
+                 </div>
+                </a>
+              </div>
+              <a href={{url_for('auth.Agra')}}>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'Agra.jpg')}}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">AGRA</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">City of Taj</h1>
+                    <p class="leading-relaxed">Agra the city known for Taj Mahal.</p>
+                  </div>
+                
+                 </div>
+                </a>
+              </div>
+              <a href={{url_for('auth.Jaisalmer')}}>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{url_for('static', filename = 'jaisalmer.jpg')}}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-red-400 mb-1">JAISALMER</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Golden City of India</h1>
+                    <p class="leading-relaxed">Varanasi is famous for its production of silks and brocades with gold and silver threadwork.</p>
+                  </div>
+                
+                 </div>
+                </a>
+              </div>
+          </div>
+        </div>
+        <hr>
+        <br>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white align-justify-center "> Blogs </h1>
+        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+        </div>
+        
+        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-12">
+              <div class="p-12 md:w-1/2 flex flex-col items-start">
+                <span class="inline-block py-1 px-2 rounded bg-gray-800 text-gray-400 text-opacity-75 text-xs font-medium tracking-widest">Trending</span>
+                <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">Checkout this latest trending places in India</h2>
+                <p class="leading-relaxed mb-8">It's time to rise from the slumber we all have been in during thins covid times but its about to change check out this blog to learn more.</p>
+                <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+                  <a href="https://www.tourmyindia.com/blog/" class="text-blue-400 inline-flex items-center">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                 
+                </div>
+                <a class="inline-flex items-center">
+                  <img alt="blog" src="https://www.tourmyindia.com/blog//wp-content/themes/tmi-blog/images/inner_logo.png" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-white">India Travel & Tourism Blog</span>
+                    <span class="text-gray-500 text-xs tracking-widest mt-0.5">BLOG PAGE</span>
+                  </span>
+                </a>
+              </div>
+              <div class="p-12 md:w-1/2 flex flex-col items-start">
+                <span class="inline-block py-1 px-2 rounded bg-gray-800 text-gray-400 text-opacity-75 text-xs font-medium tracking-widest">First Time Travelling</span>
+                <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">So it is your first time travelling worry not here are quick tips. </h2>
+                <p class="leading-relaxed mb-8">When travelling alone or to some new place getting the basics safety needs and things is necessary and also general knowledge about some things might come handy.</p>
+                <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+                  <a href="https://www.worldpackers.com/articles/first-time-travelers" class="text-blue-400 inline-flex items-center">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  
+                </div>
+                <a class="inline-flex items-center">
+                  <img alt="blog" src="https://img.icons8.com/fluency/48/000000/blog.png" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-white">WorldPackers</span>
+                    <span class="text-gray-500 text-xs tracking-widest mt-0.5">Travel Blog</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-12">
+              <div class="p-12 md:w-1/2 flex flex-col items-start">
+                <span class="inline-block py-1 px-2 rounded bg-gray-800 text-gray-400 text-opacity-75 text-xs font-medium tracking-widest">Adventure Sports</span>
+                <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">Checkout this Adventure Sports Blog</h2>
+                <p class="leading-relaxed mb-8">Getting to see the world after a long slumber why not try adreneline rush sports.</p>
+                <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+                  <a href="https://traveltriangle.com/blog/adventure/page/3/" class="text-blue-400 inline-flex items-center">Count me in
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                 
+                </div>
+                <a class="inline-flex items-center">
+                  <img alt="blog" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-adventure-sports-extreme-sports-flaticons-flat-flat-icons.png" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-white">Travel Triangle</span>
+                    <span class="text-gray-500 text-xs tracking-widest mt-0.5">Adventure Blog</span>
+                  </span>
+                </a>
+              </div>
+              <div class="p-12 md:w-1/2 flex flex-col items-start">
+                <span class="inline-block py-1 px-2 rounded bg-gray-800 text-gray-400 text-opacity-75 text-xs font-medium tracking-widest">Safety Measures</span>
+                <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">While travelling these are the things that must be kept in mind. </h2>
+                <p class="leading-relaxed mb-8">We often go overboard while we are having fun and travelling but here are the things you must do in an emergency and help others as well as yourself.</p>
+                <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+                  <a href="https://www.visitorscoverage.com/blog/the-4-most-common-travel-emergencies/" class="text-blue-400 inline-flex items-center">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  
+                </div>
+                <a class="inline-flex items-center">
+                  <img alt="blog" src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-blog-graphic-design-justicon-lineal-color-justicon.png" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-white">VisitorsCoverage</span>
+                    <span class="text-gray-500 text-xs tracking-widest mt-0.5">Blog Site</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br>
+
+
+      <hr>
+      <hr>
+      <br>
+      <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+              <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+              <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            </svg>
+            <span class="ml-3 text-xl">GHUMOOO!</span>
+          </a>
+          <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2022 GHUMOOO! —
+            <a href={{url_for('auth.contributors')}} class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Developers</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://twitter.com/Ghumooo" class="ml-3 text-gray-400">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com/ghumooo_?utm_medium=copy_link" class="ml-3 text-gray-400">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+      </section>
+</body>
+</html>
